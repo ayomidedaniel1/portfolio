@@ -1,0 +1,24 @@
+.app__skills-container__skill {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.app__skills-container__skill img {
+  width: 4rem;
+  height: 4rem;
+}
+
+.app__skills-container__skill-name {
+  font-family: var(--font-montserrat);
+  font-weight: 400;
+  font-size: 0.8rem;
+  line-height: 1.2rem;
+  letter-spacing: 0.05em;
+  color: #464141;
+  margin-top: 0.5rem;
+  margin-bottom: -1rem;
+}
