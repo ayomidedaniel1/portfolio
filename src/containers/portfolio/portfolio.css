@@ -3,6 +3,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 .app__portfolio-heading {
@@ -28,13 +29,10 @@
 }
 
 .app__portfolio-content {
-  margin: 1rem 10rem;
-  display: flexbox;
-}
-
-/* .app__portfolio-content{
   display: grid;
-} */
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 0.1rem;
+}
 
 @media screen and (max-width: 1050px) {
   .app__portfolio-heading {

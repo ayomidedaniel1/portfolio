@@ -2,9 +2,13 @@ import React from 'react';
 import Projects from '../../components/projects/projects';
 import './portfolio.css';
 
-import { gpt3, gericht, jadoo, aimouse, tagcrypto, travek } from '../../assets';
+import { gpt3, gericht, jadoo, tagcrypto, travek } from '../../assets';
 
 const projectLinks = [
+  {
+    link: 'https://jad-oo.netlify.app/',
+    img: jadoo
+  },
   {
     link: 'https://3gpt3.netlify.app/',
     img: gpt3
@@ -12,14 +16,6 @@ const projectLinks = [
   {
     link: 'https://app-gericht.netlify.app/',
     img: gericht
-  },
-  {
-    link: 'https://jad-oo.netlify.app/',
-    img: jadoo
-  },
-  {
-    link: 'https://ai-mouse.netlify.app/',
-    img: aimouse
   },
   {
     link: 'https://tagcrypto.netlify.app/',

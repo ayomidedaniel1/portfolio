@@ -1,13 +1,12 @@
-/* .app__portfolio-container__projects {
+.app__portfolio-container__projects {
   display: flex;
   flex-direction: column;
-  padding: 2rem;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-} */
+  margin: 2rem;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
 
-/* .app__portfolio-container__projects img {
-  width: 10rem;
-  height: 10rem;
-} */
+.app__portfolio-container__projects img {
+  width: 30rem;
+  height: 20rem;
+}

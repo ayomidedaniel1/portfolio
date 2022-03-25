@@ -2,7 +2,7 @@ import React from 'react';
 import Skill from '../../components/skill/Skill';
 import './skills.css';
 
-import { Html5, Css3, Git, Javascript, Typescript, Mysql, Reactjs, Sass, Tailwindcss, Python, Django, Redux, Postgresql } from '../../assets';
+import { Html5, Css3, Git, Javascript, Typescript, Mysql, Mui, Reactjs, Sass, Tailwindcss, Python, Django, Redux, Postgresql } from '../../assets';
 
 const skillsData = [
   {
@@ -40,6 +40,10 @@ const skillsData = [
   {
     img: Reactjs,
     name: 'REACT',
+  },
+  {
+    img: Mui,
+    name: 'Material UI',
   },
   {
     img: Redux,
