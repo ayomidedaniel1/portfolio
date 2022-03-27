@@ -1,8 +1,11 @@
 import React from 'react';
+import {
+  Css3, Django, Git, Html5, Javascript, Mui, Mysql, Postgresql,
+  Python, Reactjs, Redux, Sass, Tailwindcss, Typescript
+} from '../../assets';
 import Skill from '../../components/skill/Skill';
 import './skills.css';
 
-import { Html5, Css3, Git, Javascript, Typescript, Mysql, Mui, Reactjs, Sass, Tailwindcss, Python, Django, Redux, Postgresql } from '../../assets';
 
 const skillsData = [
   {

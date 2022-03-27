@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
-import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
+import { RiCloseLine, RiMenu3Line } from 'react-icons/ri';
 import Logo from '../../assets/Logo.svg';
 import './navbar.css';
+
 
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
@@ -26,7 +27,6 @@ const Navbar = () => {
             <RiCloseLine fontSize={27} className="overlay__close" onClick={() => setToggleMenu(false)} />
             <ul className="app__navbar-smallscreen_links">
               <div />
-              {/* <li><a href="#home" onClick={() => setToggleMenu(false)}>Home</a></li> */}
               <li><a href="#about" onClick={() => setToggleMenu(false)}>About me</a></li>
               <li><a href="#skills" onClick={() => setToggleMenu(false)}>Skills</a></li>
               <li><a href="#works" onClick={() => setToggleMenu(false)}>My Works</a></li>

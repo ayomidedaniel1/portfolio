@@ -1,10 +1,8 @@
+import emailjs from 'emailjs-com';
 import React from 'react';
 import { useForm } from 'react-hook-form';
-import emailjs from 'emailjs-com';
 import Swal from 'sweetalert2';
-
 import Separator from '../../assets/Separator.png';
-
 import './contact.css';
 
 const SERVICE_ID = process.env.REACT_APP_SERVICE_ID;

@@ -1,8 +1,8 @@
 import React from 'react';
+import { gericht, gpt3, jadoo, tagcrypto, travek } from '../../assets';
 import Projects from '../../components/projects/projects';
 import './portfolio.css';
 
-import { gpt3, gericht, jadoo, tagcrypto, travek } from '../../assets';
 
 const projectLinks = [
   {

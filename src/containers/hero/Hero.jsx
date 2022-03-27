@@ -1,9 +1,7 @@
 import React from 'react';
-import { AiFillTwitterSquare } from 'react-icons/ai';
-import { AiFillGithub } from 'react-icons/ai';
-import { AiFillLinkedin } from 'react-icons/ai';
-
+import { AiFillGithub, AiFillLinkedin, AiFillTwitterSquare } from 'react-icons/ai';
 import './hero.css';
+
 
 const Hero = () => {
   return (
