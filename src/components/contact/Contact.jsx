@@ -7,9 +7,9 @@ import Separator from '../../assets/Separator.png';
 
 import './contact.css';
 
-const SERVICE_ID = 'process.env.REACT_APP_SERVICE_ID';
-const TEMPLATE_ID = 'process.env.REACT_APP_TEMPLATE_ID';
-const USER_ID = 'process.env.REACT_APP_USERID';
+const SERVICE_ID = process.env.REACT_APP_SERVICE_ID;
+const TEMPLATE_ID = process.env.REACT_APP_TEMPLATE_ID;
+const USER_ID = process.env.REACT_APP_USERID;
 
 const Contact = () => {
   const { register, handleSubmit, formState: { errors } } = useForm();
