@@ -1,6 +1,11 @@
 .app__portfolio {
   display: flex;
   flex-direction: column;
+}
+
+.head {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   position: relative;
@@ -30,8 +35,18 @@
 
 .app__portfolio-content {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-  gap: 0.1rem;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  align-self: center;
+}
+
+@media screen and (min-width: 2000px) {
+  .app__portfolio-content {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 @media screen and (max-width: 1050px) {
@@ -48,6 +63,12 @@
     font-size: 1.7rem;
     line-height: 2.3rem;
     letter-spacing: 0.2em;
+  }
+}
+
+@media screen and (max-width: 970px) {
+  .app__portfolio-content {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -99,5 +120,11 @@
     font-size: 1.4rem;
     line-height: 2rem;
     letter-spacing: 0.15em;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .app__portfolio-content {
+    grid-template-columns: repeat(1, 100%);
   }
 }

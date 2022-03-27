@@ -30,8 +30,10 @@ const projectLinks = [
 const Portfolio = () => {
   return (
     <div className='app__portfolio section__padding' id='works'>
-      <div className="app__portfolio-heading">
-        <h1>PORTFOLIO</h1>
+      <div className="head">
+        <div className="app__portfolio-heading">
+          <h1>PORTFOLIO</h1>
+        </div>
       </div>
       <div className="app__portfolio-content">
         {projectLinks.map((item, index) => (

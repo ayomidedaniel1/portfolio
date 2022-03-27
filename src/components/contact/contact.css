@@ -229,3 +229,14 @@ input[type='submit']:active {
     margin: 0.4rem;
   }
 }
+
+@media screen and (max-width: 350px) {
+  .app__contact-content p {
+    margin: 0.6rem 0.8rem;
+  }
+
+  .app__contact-form {
+    width: 16rem;
+    margin: 0.4rem;
+  }
+}

@@ -10,7 +10,7 @@ const Hero = () => {
     <div className='app__hero'>
       <div className="app__hero-content">
         <h2>Hi, I'm</h2>
-        <h1>Ayomide Adeyemi</h1>
+        <h1>Ayomide</h1>
         <p>Fullstack Developer / UI Designer</p>
         <div className='app__hero-content_space' />
         <div className="app__hero-content_links">
