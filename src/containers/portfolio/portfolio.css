@@ -1,42 +1,18 @@
 .app__portfolio {
   display: flex;
   flex-direction: column;
-}
-
-.head {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-}
-
-.app__portfolio-heading {
-  border: 7px solid #000000;
-  box-sizing: border-box;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  margin-top: 2rem;
-  margin-bottom: 2.6rem;
-  width: 20rem;
-  height: 5rem;
-}
-
-.app__portfolio-heading h1 {
-  font-family: var(--font-montserrat);
-  font-weight: 700;
-  font-size: 1.8rem;
-  line-height: 2.4rem;
-  letter-spacing: 0.2em;
-  color: #000000;
+  background: radial-gradient(
+      50% 50% at 50% 50%,
+      rgba(26, 21, 21, 0) 0%,
+      rgba(1, 1, 1, 0.16) 100%
+    ),
+    #001f33;
 }
 
 .app__portfolio-content {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 0.5rem;
+  gap: 0.4rem;
   justify-content: center;
   align-items: center;
   align-content: center;
@@ -46,80 +22,13 @@
 @media screen and (min-width: 2000px) {
   .app__portfolio-content {
     grid-template-columns: repeat(4, 1fr);
+    gap: 0.7rem;
   }
 }
 
-@media screen and (max-width: 1050px) {
-  .app__portfolio-heading {
-    border: 6px solid #000000;
-    margin-top: 1.8rem;
-    margin-bottom: 2.5rem;
-    width: 20rem;
-    height: 5.4rem;
-  }
-
-  .app__portfolio-heading h1 {
-    font-weight: 700;
-    font-size: 1.7rem;
-    line-height: 2.3rem;
-    letter-spacing: 0.2em;
-  }
-}
-
-@media screen and (max-width: 970px) {
+@media screen and (max-width: 720px) {
   .app__portfolio-content {
     grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media screen and (max-width: 900px) {
-  .app__portfolio-heading {
-    border: 6px solid #000000;
-    margin-top: 1.6rem;
-    margin-bottom: 2.3rem;
-    width: 18rem;
-    height: 5rem;
-  }
-
-  .app__portfolio-heading h1 {
-    font-weight: 700;
-    font-size: 1.6rem;
-    line-height: 2.3rem;
-    letter-spacing: 0.18em;
-  }
-}
-
-@media screen and (max-width: 750px) {
-  .app__portfolio-heading {
-    border: 6px solid #000000;
-    margin-top: 1.5rem;
-    margin-bottom: 2.2rem;
-    width: 16rem;
-    height: 4.9rem;
-  }
-
-  .app__portfolio-heading h1 {
-    font-weight: 700;
-    font-size: 1.6rem;
-    line-height: 2.2rem;
-    letter-spacing: 0.17em;
-  }
-}
-
-@media screen and (max-width: 550px) {
-  .app__portfolio-heading {
-    border: 6px solid #000000;
-    margin-top: 1rem;
-    margin-bottom: 2rem;
-    width: 14rem;
-    height: 4.7rem;
-  }
-
-  .app__portfolio-heading h1 {
-    font-weight: 700;
-    font-size: 1.4rem;
-    line-height: 2rem;
-    letter-spacing: 0.15em;
   }
 }
 

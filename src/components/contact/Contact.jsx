@@ -51,25 +51,25 @@ const Contact = () => {
       <div className="app__contact-form">
 
         <form id='form' onSubmit={handleSubmit(onSubmit, handleError)}>
+          <small className='text-danger'>
+            {errors?.name && errors.name.message}
+          </small>
           <input
             name='name'
             type='text'
             placeholder='Enter Your Name'
             {...register("name", error.name)}
           />
-          <small className='text-danger'>
-            {errors?.name && errors.name.message}
-          </small>
 
+          <small className='text-danger'>
+            {errors?.email && errors.email.message}
+          </small>
           <input
             name='email'
             type='email'
             placeholder='Enter Your Email'
             {...register("email", error.email)}
           />
-          <small className='text-danger'>
-            {errors?.email && errors.email.message}
-          </small>
 
           <textarea
             name='message'

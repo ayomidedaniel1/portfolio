@@ -44,10 +44,10 @@ const skillsData = [
     img: Reactjs,
     name: 'REACT',
   },
-  {
-    img: Mui,
-    name: 'Material UI',
-  },
+  // {
+  //   img: Mui,
+  //   name: 'Material UI',
+  // },
   {
     img: Redux,
     name: 'REDUX',

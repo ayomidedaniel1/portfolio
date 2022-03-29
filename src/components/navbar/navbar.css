@@ -3,13 +3,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem 8rem;
+  padding: 1.5rem 7rem;
 }
 
 .app__navbar-logo {
   display: flex;
   justify-content: flex-start;
-  align-items: center;
 }
 
 .app__navbar-logo img {
@@ -18,39 +17,43 @@
 }
 
 .app__navbar-links {
-  flex: 1;
   display: flex;
   justify-content: flex-end;
-  align-items: center;
-  text-align: center;
   list-style: none;
+  align-items: center;
 }
 
-.app__navbar-links li {
+.app__navbar-links a {
   font-family: var(--font-montserrat);
   margin: 0 1rem;
   cursor: pointer;
-  color: var(--text-white);
+  color: var(--text-cool);
   font-weight: 700;
-  font-size: 15px;
-  line-height: 21px;
+  font-size: 16px;
+  line-height: 25px;
 }
 
-.app__navbar-links li:hover {
-  color: var(--bg-gray);
-  border-bottom: 0.1rem solid var(--bg-gray);
-  padding-bottom: 0.2rem;
+.app__navbar-links a:hover {
+  border-bottom: 0.1rem solid var(--text-cool);
+  padding-bottom: 0.1rem;
+  transform: translateY(-5px);
 }
 
 .app__navbar-contact {
   display: flex;
-  margin: 0 1rem;
+  margin: 0 0.8rem;
 }
 
 .app__navbar-contact button {
-  background: #ffffff;
-  border: 4px solid #ffffff;
+  background: transparent;
+  border: 1px solid var(--text-cool);
   border-radius: 30px;
+  height: 2rem;
+}
+
+.app__navbar-contact button:hover {
+  background: #193331;
+  height: 2.1rem;
 }
 
 .app__navbar-contact a {
@@ -63,12 +66,7 @@
   text-align: center;
   align-items: center;
   transition: 0.5s ease;
-}
-
-.app__navbar-contact a:hover {
-  border-bottom: 1px solid var(--bg-gray);
-  padding-bottom: 0.1rem;
-  font-size: 14.2px;
+  color: var(--text-cool);
 }
 
 .app__navbar-smallscreen {
@@ -78,23 +76,21 @@
 .app__navbar-smallscreen_overlay {
   position: fixed;
   top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
+  right: 0;
+  width: 30%;
+  height: 30%;
   background: var(--bg-black);
   transition: 0.5s ease;
-
   flex-direction: column;
   z-index: 5;
 }
 
 .app__navbar-smallscreen_overlay .overlay__close {
   font-size: 27px;
-  color: var(--text-white);
   cursor: pointer;
   position: absolute;
-  top: 45px;
-  right: 70px;
+  top: 40px;
+  right: 30px;
 }
 
 .app__navbar-smallscreen_links {
@@ -102,18 +98,25 @@
 }
 
 .app__navbar-smallscreen_links li {
+  margin-top: 10px;
+  margin-bottom: 7px;
+}
+
+.app__navbar-smallscreen_links a {
   font-family: var(--font-montserrat);
-  margin: 2rem;
+  margin: 1.5rem;
   cursor: pointer;
   font-weight: 600;
   font-size: 15px;
-  line-height: 15px;
-
-  color: #ffffff;
+  line-height: 20px;
+  color: var(--text-cool);
 }
 
-.app__navbar-smallscreen_links li:hover {
-  color: var(--bg-gray);
+.app__navbar-smallscreen_links a:hover {
+  border-bottom: 0.1rem solid var(--text-cool);
+  padding-bottom: 0.15rem;
+  font-size: 17px;
+  transform: translateY(-5px);
 }
 
 @media screen and (min-width: 2350px) {
@@ -128,7 +131,13 @@
   }
 }
 
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 1060px) {
+  .app__navbar {
+    padding: 2rem 4rem;
+  }
+}
+
+@media screen and (max-width: 655px) {
   .app__navbar-links {
     display: none;
   }
@@ -150,16 +159,57 @@
   .app__navbar-logo img {
     margin-left: 1rem;
   }
+
+  .app__navbar-logo img {
+    width: 40px;
+    height: 40px;
+  }
 }
 
-@media screen and (max-width: 1060px) {
-  .app__navbar {
-    padding: 2rem 4rem;
+@media screen and (max-width: 599px) {
+  .app__navbar-smallscreen_overlay {
+    width: 35%;
   }
 }
 
 @media screen and (max-width: 550px) {
   .app__navbar {
     padding: 1rem;
+  }
+}
+
+@media screen and (max-width: 524px) {
+  .app__navbar-smallscreen_overlay {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 475px) {
+  .app__navbar-smallscreen_overlay {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 455px) {
+  .app__navbar-smallscreen_overlay {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 355px) {
+  .app__navbar-smallscreen_overlay {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .app__navbar-smallscreen_overlay {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 305px) {
+  .app__navbar-smallscreen_overlay {
+    width: 100%;
   }
 }

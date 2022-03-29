@@ -4,9 +4,10 @@
   --font-montserrat: 'Montserrat', sans-serif;
   --font-nunito: 'Nunito', sans-serif;
 
-  --bg-gray: #d7d7d7;
-  --bg-black: #1a1a1a;
-  --text-white: #ffffff;
+  --bg-black: #051622;
+  --text-bold: #deb992;
+  --text-cool: #1ba098;
+  --light-mode: #869ba9;
 }
 
 * {

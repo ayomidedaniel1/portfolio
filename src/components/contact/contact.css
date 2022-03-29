@@ -3,36 +3,38 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  background: radial-gradient(
+      50% 50% at 50% 50%,
+      rgba(26, 21, 21, 0) 0%,
+      rgba(1, 1, 1, 0.16) 100%
+    ),
+    #001f33;
 }
 
 .app__contact-heading {
-  border: 7px solid #000000;
   box-sizing: border-box;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  margin-top: 2rem;
-  margin-bottom: 1.5rem;
-  width: 20rem;
-  height: 5rem;
 }
 
 .app__contact-heading h1 {
-  font-family: var(--font-montserrat);
-  font-weight: 700;
-  font-size: 1.8rem;
-  line-height: 2.4rem;
-  letter-spacing: 0.2em;
-  color: #000000;
+  opacity: 1;
+  font-family: var(--font-nunito);
+  font-size: 92px;
+  font-weight: 100;
+  line-height: 105%;
+  color: var(--text-bold);
+  margin-top: 0;
+  margin-bottom: 0.5rem;
 }
 
 .app__contact-content p {
-  font-family: var(--font-nunito);
-  font-weight: 400;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 500;
   font-size: 15px;
   line-height: 138%;
-  color: #050505;
+  color: var(--light-mode);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -63,8 +65,8 @@ form {
 input {
   width: 100%;
   border: none;
-  border-left: 3px solid #000000;
-  border-bottom: 3px solid #000000;
+  border-left: 2px solid rgba(134, 155, 169, 0.2);
+  border-bottom: 2px solid rgba(134, 155, 169, 0.2);
   padding: 10px 14px;
   margin-bottom: 1.5rem;
 
@@ -73,15 +75,15 @@ input {
   font-weight: 600;
   font-size: 12px;
   line-height: 1rem;
-  color: #8b8b8b;
+  color: var(--text-bold);
 }
 
 textarea {
   width: 100%;
   border: none;
-  border-left: 3px solid #000000;
-  border-bottom: 3px solid #000000;
-  padding: 50px 15px;
+  border-left: 2px solid rgba(134, 155, 169, 0.2);
+  border-bottom: 2px solid rgba(134, 155, 169, 0.2);
+  padding: 20px 15px 80px 15px;
   margin-bottom: 10px;
 
   text-align: justify;
@@ -91,7 +93,7 @@ textarea {
   font-weight: 600;
   font-size: 12px;
   line-height: 1rem;
-  color: #8b8b8b;
+  color: var(--text-bold);
 }
 
 input[type='submit'] {
@@ -99,8 +101,8 @@ input[type='submit'] {
   background: transparent;
   text-transform: uppercase;
   border: none;
-  border-left: 2.5px solid #000000;
-  border-right: 2.5px solid #000000;
+  border-left: 2px solid rgba(134, 155, 169, 0.2);
+  border-right: 2px solid rgba(134, 155, 169, 0.2);
   padding: 9px 10px;
   margin-left: 30%;
   margin-top: 1rem;
@@ -111,11 +113,11 @@ input[type='submit'] {
   line-height: 0.8rem;
   letter-spacing: 0.04em;
 
-  color: #000000;
+  color: var(--text-cool);
 }
 
 input[type='submit']:hover {
-  background: var(--bg-gray);
+  background: var(--bg-black);
 }
 
 input[type='submit']:active {
@@ -125,32 +127,7 @@ input[type='submit']:active {
   opacity: 0.8;
 }
 
-@media screen and (max-width: 1062px) {
-  .app__contact-content p {
-    margin: 1rem 8rem;
-  }
-}
-
 @media screen and (max-width: 1050px) {
-  .app__contact-heading {
-    border: 6px solid #000000;
-    margin-top: 1.8rem;
-    margin-bottom: 2.5rem;
-    width: 20rem;
-    height: 5.4rem;
-  }
-
-  .app__contact-heading h1 {
-    font-weight: 700;
-    font-size: 1.6rem;
-    line-height: 2.2rem;
-    letter-spacing: 0.19em;
-  }
-
-  .app__contact-content p {
-    margin: 1rem 5rem;
-  }
-
   .app__contact-form {
     width: 25rem;
     margin: 0.5rem;
@@ -158,40 +135,15 @@ input[type='submit']:active {
 }
 
 @media screen and (max-width: 900px) {
-  .app__contact-heading {
-    border: 6px solid #000000;
-    margin-top: 1.6rem;
-    margin-bottom: 2.3rem;
-    width: 18rem;
-    height: 5rem;
-  }
-
   .app__contact-heading h1 {
-    font-weight: 700;
-    font-size: 1.5rem;
-    line-height: 2.1rem;
-    letter-spacing: 0.17em;
-  }
-
-  .app__contact-content p {
-    margin: 1rem 3rem;
+    font-size: 72px;
+    line-height: 90%;
   }
 }
 
 @media screen and (max-width: 750px) {
-  .app__contact-heading {
-    border: 6px solid #000000;
-    margin-top: 1.5rem;
-    margin-bottom: 2.2rem;
-    width: 16rem;
-    height: 4.9rem;
-  }
-
   .app__contact-heading h1 {
-    font-weight: 700;
-    font-size: 1.4rem;
-    line-height: 2rem;
-    letter-spacing: 0.16em;
+    font-size: 62px;
   }
 
   .app__contact-content p {
@@ -205,19 +157,8 @@ input[type='submit']:active {
 }
 
 @media screen and (max-width: 550px) {
-  .app__contact-heading {
-    border: 6px solid #000000;
-    margin-top: 1rem;
-    margin-bottom: 2rem;
-    width: 14rem;
-    height: 4.7rem;
-  }
-
   .app__contact-heading h1 {
-    font-weight: 700;
-    font-size: 1.3rem;
-    line-height: 1.9rem;
-    letter-spacing: 0.14em;
+    font-size: 52px;
   }
 
   .app__contact-content p {
@@ -230,13 +171,46 @@ input[type='submit']:active {
   }
 }
 
+@media screen and (max-width: 450px) {
+  .app__contact-heading h1 {
+    font-size: 42px;
+    line-height: 80%;
+  }
+}
+
 @media screen and (max-width: 350px) {
+  .app__contact-heading h1 {
+    font-size: 32px;
+    line-height: 70%;
+  }
+
   .app__contact-content p {
     margin: 0.6rem 0.8rem;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 100%;
   }
 
   .app__contact-form {
     width: 16rem;
     margin: 0.4rem;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  .app__contact-heading h1 {
+    font-size: 25px;
+    line-height: 60%;
+  }
+
+  .app__contact-content p {
+    margin: 0.4rem 0.6rem;
+    font-size: 10px;
+    line-height: 90%;
+  }
+
+  .app__contact-form {
+    width: 13rem;
+    margin: 0.3rem;
   }
 }
