@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-  Css3, Django, Git, Html5, Javascript, Mui, Mysql, Postgresql,
+  Css3, Django, Git, Html5, Javascript, Mysql, Postgresql,
   Python, Reactjs, Redux, Sass, Tailwindcss, Typescript
 } from '../../assets';
 import Skill from '../../components/skill/Skill';
