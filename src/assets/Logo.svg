@@ -1,11 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 25.4.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 216.5 220.9" style="enable-background:new 0 0 216.5 220.9;" xml:space="preserve">
+	 viewBox="0 0 230.8 236.6" style="enable-background:new 0 0 230.8 236.6;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:#1B0101;}
+	.st0{enable-background:new    ;}
+	.st1{fill:#0E0101;}
+	.st2{fill:#030303;}
 </style>
-<polygon class="st0" points="109,0.9 178.1,119.8 154.9,133.7 109,54.9 62.4,133.7 39,120.2 "/>
-<polygon class="st0" points="58.7,220.9 0,186.9 35.1,126.2 107.9,168.4 181.3,126.2 215.8,186.4 157.7,220.9 144.4,197.6 
-	179.8,177.2 171.6,163.1 108.4,199.5 44.8,163.5 36.2,177.4 72.2,197.6 "/>
+<g>
+	<g class="st0">
+		<g>
+			<polygon points="163.9,135.7 150.2,128.2 109.5,58.3 123.1,65.8 			"/>
+		</g>
+		<g>
+			<polygon points="60.7,137.2 47,129.8 109.6,6.5 123.2,13.9 			"/>
+		</g>
+		<g>
+			<polygon points="123.2,13.9 184.5,119.5 163.9,135.7 123.1,65.8 81.5,147.3 60.7,137.2 			"/>
+		</g>
+	</g>
+</g>
+<g>
+	<g class="st0">
+		<g>
+			<polygon points="186,178.5 172.4,171.1 165.1,158.5 178.8,165.9 			"/>
+		</g>
+		<g>
+			<polygon class="st1" points="154.5,202.5 140.9,195.1 172.4,171.1 186,178.5 			"/>
+		</g>
+		<g>
+			<polygon points="166.3,223.3 152.6,215.8 140.9,195.1 154.5,202.5 			"/>
+		</g>
+		<g>
+			<polygon class="st1" points="122.1,179.1 108.4,171.6 173.8,121.9 187.5,129.3 			"/>
+		</g>
+		<g>
+			<polygon points="58.3,196.7 44.6,189.2 76.6,204.1 90.3,211.5 			"/>
+		</g>
+		<g>
+			<polygon class="st2" points="57.4,147.6 43.7,140.2 108.4,171.6 122.1,179.1 			"/>
+		</g>
+		<g>
+			<polygon points="26,210.3 12.3,202.8 43.7,140.2 57.4,147.6 			"/>
+		</g>
+		<g>
+			<polygon points="187.5,129.3 218.1,182.9 166.3,223.3 154.5,202.5 186,178.5 178.8,165.9 122.4,208.9 65.9,182.2 58.3,196.7 
+				90.3,211.5 78.2,235.7 26,210.3 57.4,147.6 122.1,179.1 			"/>
+		</g>
+	</g>
+</g>
 </svg>

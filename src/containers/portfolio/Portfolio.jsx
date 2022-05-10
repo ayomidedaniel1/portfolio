@@ -1,5 +1,5 @@
 import React from 'react';
-import { gericht, gpt3, jadoo, tagcrypto, travek } from '../../assets';
+import { gpt3, jadoo, tagcrypto, travek, amazon, smartspace } from '../../assets';
 import Projects from '../../components/projects/projects';
 import './portfolio.css';
 
@@ -17,12 +17,16 @@ const projectLinks = [
     img: jadoo
   },
   {
-    link: 'https://app-gericht.netlify.app/',
-    img: gericht
+    link: 'https://cloneio.web.app/',
+    img: amazon
   },
   {
     link: 'https://travek.netlify.app/',
     img: travek
+  },
+  {
+    link: 'smartspaceio.netlify.app/',
+    img: smartspace
   },
 ];
 
