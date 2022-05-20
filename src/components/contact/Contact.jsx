@@ -10,25 +10,23 @@ const TEMPLATE_ID = process.env.REACT_APP_TEMPLATE_ID;
 const USER_ID = process.env.REACT_APP_USERID;
 
 const Contact = () => {
-  const { register, handleSubmit, formState: { errors } } = useForm();
+  const { register, handleSubmit, reset, formState: { errors } } = useForm();
 
   const onSubmit = (e) => {
     emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, '#form', USER_ID)
       .then((result) => {
-        console.log(result.text);
         Swal.fire({
           icon: 'success',
           title: 'Message sent successfully'
         });
       }, (error) => {
-        console.log(error.text);
         Swal.fire({
           icon: 'error',
           title: 'Ooops, something went wrong',
           text: error.text
         });
       });
-    e.target.reset();
+    reset();
   };
 
   const handleError = (errors) => console.log(errors);
