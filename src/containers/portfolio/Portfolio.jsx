@@ -25,7 +25,7 @@ const projectLinks = [
     img: travek
   },
   {
-    link: 'smartspaceio.netlify.app/',
+    link: 'https://master--smartspaceio.netlify.app/',
     img: smartspace
   },
 ];
