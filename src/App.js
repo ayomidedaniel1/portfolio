@@ -6,7 +6,7 @@ import { Footer, Hero, Portfolio, Skills } from './containers';
 
 const App = () => {
   return (
-    <div className='App'>
+    <>
       <Router>
         <Navbar />
         <div className='div' />
@@ -19,7 +19,7 @@ const App = () => {
         </Routes>
       </Router>
       <Footer />
-    </div>
+    </>
   );
 };
 
