@@ -21,7 +21,15 @@ const Contact = () => {
     try {
       const response = await emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, '#form', USER_ID);
       if (response.text === "OK") {
-        toast.success(`Hello ${senderName}. I'll get back to you ASAP.`);
+        toast.success(`Hello ${senderName}. I'll get back to you ASAP.`, {
+          position: "top-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+        });
       }
     } catch (err) {
       toast.error(err.text);

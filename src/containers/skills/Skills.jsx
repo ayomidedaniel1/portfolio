@@ -45,6 +45,10 @@ const skillsData = [
     name: 'REACT',
   },
   {
+    img: Reactjs,
+    name: 'REACT NATIVE',
+  },
+  {
     img: Redux,
     name: 'REDUX',
   },
@@ -59,6 +63,26 @@ const skillsData = [
   {
     img: Git,
     name: 'GIT',
+  },
+  {
+    img: Git,
+    name: 'FRAMER MOTIONT',
+  },
+  {
+    img: Git,
+    name: 'GSAP ANIMATION',
+  },
+  {
+    img: Git,
+    name: 'FIREBASE',
+  },
+  {
+    img: Git,
+    name: 'STYLED COMPONENTS',
+  },
+  {
+    img: Git,
+    name: 'FIREBASE',
   },
 ];
 
