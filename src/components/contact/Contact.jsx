@@ -1,8 +1,11 @@
+import React, { useRef } from 'react';
 import emailjs from 'emailjs-com';
-import React from 'react';
 import { useForm } from 'react-hook-form';
-import Swal from 'sweetalert2';
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 import Separator from '../../assets/Separator.png';
+
 import './contact.css';
 
 const SERVICE_ID = process.env.REACT_APP_SERVICE_ID;
@@ -11,21 +14,18 @@ const USER_ID = process.env.REACT_APP_USERID;
 
 const Contact = () => {
   const { register, handleSubmit, reset, formState: { errors } } = useForm();
+  const formRef = useRef();
 
-  const onSubmit = (e) => {
-    emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, '#form', USER_ID)
-      .then((result) => {
-        Swal.fire({
-          icon: 'success',
-          title: 'Message sent successfully'
-        });
-      }, (error) => {
-        Swal.fire({
-          icon: 'error',
-          title: 'Ooops, something went wrong',
-          text: error.text
-        });
-      });
+  const onSubmit = async (e) => {
+    const senderName = formRef.current.name.value;
+    try {
+      const response = await emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, '#form', USER_ID);
+      if (response.text === "OK") {
+        toast.success(`Hello ${senderName}. I'll get back to you ASAP.`);
+      }
+    } catch (err) {
+      toast.error(err.text);
+    }
     reset();
   };
 
@@ -48,7 +48,7 @@ const Contact = () => {
 
       <div className="app__contact-form">
 
-        <form id='form' onSubmit={handleSubmit(onSubmit, handleError)}>
+        <form id='form' onSubmit={handleSubmit(onSubmit, handleError)} ref={formRef}>
           <small className='text-danger'>
             {errors?.name && errors.name.message}
           </small>

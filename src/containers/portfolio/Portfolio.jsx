@@ -1,6 +1,7 @@
 import React from 'react';
 import { gpt3, jadoo, tagcrypto, travek, amazon, smartspace } from '../../assets';
 import Projects from '../../components/projects/projects';
+
 import './portfolio.css';
 
 const projectLinks = [

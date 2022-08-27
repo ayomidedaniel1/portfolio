@@ -4,8 +4,8 @@ import {
   Python, Reactjs, Redux, Sass, Tailwindcss, Typescript
 } from '../../assets';
 import Skill from '../../components/skill/Skill';
-import './skills.css';
 
+import './skills.css';
 
 const skillsData = [
   {
