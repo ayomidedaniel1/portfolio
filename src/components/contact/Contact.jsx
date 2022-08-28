@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import emailjs from 'emailjs-com';
 import { useForm } from 'react-hook-form';
-import { toast } from 'react-toastify';
+import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 import Separator from '../../assets/Separator.png';
@@ -16,24 +16,19 @@ const Contact = () => {
   const { register, handleSubmit, reset, formState: { errors } } = useForm();
   const formRef = useRef();
 
-  const onSubmit = async (e) => {
+  const onSubmit = (e) => {
     const senderName = formRef.current.name.value;
-    try {
-      const response = await emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, '#form', USER_ID);
-      if (response.text === "OK") {
-        toast.success(`Hello ${senderName}. I'll get back to you ASAP.`, {
-          position: "top-right",
-          autoClose: 5000,
-          hideProgressBar: false,
-          closeOnClick: true,
-          pauseOnHover: true,
-          draggable: true,
-          progress: undefined,
-        });
-      }
-    } catch (err) {
-      toast.error(err.text);
-    }
+    emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, '#form', USER_ID)
+      .then(
+        (result) => {
+          alert("Message Sent Successfully");
+          toast.success(`Hello ${senderName}. I'll get back to you ASAP.`);
+        },
+        (err) => {
+          toast.error("Something went wrong. Try again");
+          // console.log(err.text);
+        }
+      );
     reset();
   };
 
@@ -86,6 +81,17 @@ const Contact = () => {
 
           <input type="submit" />
         </form>
+        <ToastContainer
+          position="bottom-left"
+          autoClose={5000}
+          hideProgressBar={false}
+          newestOnTop={false}
+          closeOnClick
+          rtl={false}
+          pauseOnFocusLoss
+          draggable={false}
+          pauseOnHover={false}
+        />;
 
       </div>
 
