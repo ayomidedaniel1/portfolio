@@ -21,7 +21,6 @@ const Contact = () => {
     emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, '#form', USER_ID)
       .then(
         (result) => {
-          alert("Message Sent Successfully");
           toast.success(`Hello ${senderName}. I'll get back to you ASAP.`);
         },
         (err) => {
